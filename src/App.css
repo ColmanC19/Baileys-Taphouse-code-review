@@ -7,7 +7,11 @@ body {
   font-family: monospace;
   font-style: bold;
   font-family: monospace;
-  color: white;  
+  color: white;
+}
+
+.theBody {
+  display: none;
 }
 
 .Bailey{

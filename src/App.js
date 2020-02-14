@@ -7,15 +7,19 @@ import BeerTaps from './components/BeerTaps.jsx'
 
 
 
+
 function App() {
   return (
     <div className="App">
     <Header />
-    <Switch>
-    <Route exact path='/' component={BeerTaps} />
-    </Switch>
     <h1 className ="Bailey"> Bailey's Taphouse</h1>
-    <HomeBody />
+    <Switch>
+    <Route exact path='/beertaps' component={BeerTaps} />
+    <Route exact path='/homebody' component={HomeBody} />
+    </Switch>
+    <div className ="theBody">
+      <HomeBody />
+    </div>
     </div>
   );
 }
