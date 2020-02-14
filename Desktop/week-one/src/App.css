@@ -4,8 +4,10 @@
 
 body {
   background-color: #282c34;
+  font-family: monospace;
 }
 
 .Bailey{
   font-size: 52px;
+  font-family: monospace;
 }
