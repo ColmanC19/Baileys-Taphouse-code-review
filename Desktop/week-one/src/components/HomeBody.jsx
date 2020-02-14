@@ -6,15 +6,16 @@ const HomeBodycss = {
   border: "solid",
   padding: "20px",
   margin: "5px",
-  width: "250px",
-  height: "400px"
+  width: "500px",
+  height: "150px"
 }
 function HomeBody(){
   return(
-    <div>
-<h1>Welcome to Baileys Taphouse</h1>
-<h2>An experience for the craft brew enthusiast. Bring your friends, parents, spouse or your pooch. No Minors.</h2>
-</div>
+    <div style ={HomeBodycss}>
+    <h1>Welcome to Baileys Taphouse</h1>
+    <h2>An experience for the craft brew enthusiast. Bring your friends, parents, spouse or your pooch. No Minors.</h2>
+    </div>
+    
   )
 }
 
