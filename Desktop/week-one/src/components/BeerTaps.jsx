@@ -4,9 +4,9 @@ import Header from './components/Header.jsx'
 
 function BeerTaps(){
 
-return(
-  
-)
+  return(
+
+  )
 }
 
 export default BeerTaps
