@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
-import Header from './components/Header.jsx'
+
 
 function BeerTaps(){
 
   return(
-
-  )
+    <div>
+    </div>
+  );
 }
 
 export default BeerTaps

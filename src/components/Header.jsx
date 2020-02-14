@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 
 
 function Header(){
@@ -26,8 +26,8 @@ function Header(){
  return (
 
    <div style={menu}>
-   <a href="#" style={navigation} > 🌳 Home 🌳 </a>
-   <a href="#" style={navigation} >Beers on Tap 🌳</a>
+   <Link style={navigation} to="/">🌳 Home 🌳</Link> <Link style={navigation} to="/newticket">🌳 Beers on Tap 🌳</Link>
+
 
    </div>
 
