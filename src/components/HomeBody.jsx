@@ -1,12 +1,14 @@
 import React from "react";
 
-
 const homeBodycss = {
-  display: "inlineBlock",
+  display: "inline-Block",
   gridTemplateColumns: "1fr 1fr 1fr",
   border: "solid",
   padding: "30px",
-  margin: "Auto",
+  marginTop: "Auto",
+  marginBottom: "Auto",
+  marginLeft: "Auto",
+  MarginRight: "Auto",
   width: "500px",
   height: "150px"
 }
@@ -19,7 +21,7 @@ function HomeBody(){
     </div>
     <div style ={homeBodycss}>
     <h1>Plan your next event here!</h1>
-    <h2>Bachelor/Bachelorette parties, weddings, meetups, office outings or any reason to get a large group of friends together! Enter your email below and we'll get in touch with you.</h2>
+    <h2>Bachelor/Bachelorette parties, weddings, meetups, office outings or any reason to get a large group of friends together! </h2>
 
     </div>
     </div>
