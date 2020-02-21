@@ -5,28 +5,7 @@ import Taps from './images/taps.jpg'
 import './BeerTapsCss.css'
 
 function BeerTaps(props){
-  var masterBeerTapList = [
-  {
-    breweryName: 'Breakside',
-    beerStyle: 'Wanderlust IPA',
-    abv: '6.7'
-  },
-  {
-    breweryName: 'Ft. George',
-    beerStyle: 'Vortex IPA',
-    abv: '7.7'
-  },
-  {
-    breweryName: 'Baerlic',
-    beerStyle: 'Dark Thoughts CDA',
-    abv: '6.66'
-  },
-  {
-    breweryName: 'Von Ebert',
-    beerStyle: 'Battle Stations! IPA',
-    abv: '7.2'
-  }
-];
+
 
   return(
     <div>

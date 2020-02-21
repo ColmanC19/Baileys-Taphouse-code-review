@@ -1,12 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function NewBeerForm(){
+function NewBeerForm(props){
   let _breweryName = null;
   let _beerStyle = null;
   let _abv = null;
 
   function handleNewBeerFormSubmission(event) {
     event.preventDefault();
+      props.onNewBeerCreation({brewery: _breweryName.value, beerS: _beerStyle.value, abv: _abv.value});
     _breweryName.value = '';
     _beerStyle.value = '';
     _abv.value = '';
@@ -35,5 +37,8 @@ function NewBeerForm(){
     </div>
   );
 }
+NewBeerForm.propTypes = {
+  onNewBeerCreation: PropTypes.func
+};
 
 export default NewBeerForm;

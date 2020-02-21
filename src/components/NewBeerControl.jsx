@@ -1,6 +1,7 @@
 import React from 'react';
 import BeerQuestions from './BeerQuestions';
 import NewBeerForm from './NewBeerForm';
+import PropTypes from "prop-types";
 
 class NewBeerControl extends React.Component {
   constructor(props) {
@@ -17,9 +18,9 @@ handleTroubleshootingConfirmation(){
 
   render(){
     let currentlyVisibleContent = null;
-      if (this.state.formVisibleOnPage){
-        currentlyVisibleContent = <NewBeerForm />;
-      } else {
+    if (this.state.formVisibleOnPage){
+          currentlyVisibleContent = <NewBeerForm onNewBeerCreation={this.props.onNewBeerCreation}/>;
+        } else {
         currentlyVisibleContent = <BeerQuestions onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation}/>;
       }
     return (
@@ -29,5 +30,8 @@ handleTroubleshootingConfirmation(){
     );
   }
 }
+NewBeerControl.propTypes = {
+  onNewBeerCreation: PropTypes.func
+};
 
 export default NewBeerControl;
