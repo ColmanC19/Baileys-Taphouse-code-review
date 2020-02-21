@@ -20,7 +20,7 @@ handleTroubleshootingConfirmation(){
       if (this.state.formVisibleOnPage){
         currentlyVisibleContent = <NewBeerForm />;
       } else {
-        currentlyVisibleContent = <ConfirmationQuestions onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation}/>;
+        currentlyVisibleContent = <BeerQuestions onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation}/>;
       }
     return (
       <div>

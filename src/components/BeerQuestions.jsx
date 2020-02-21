@@ -1,14 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function BeerQuestions(){
+function BeerQuestions(props){
   return (
     <div>
       <p>Are you sure you would like to proceed?</p>
-      <button>Yes</button>
+      <button onClick={props.onTroubleshootingConfirmation}>Yes</button>
     </div>
   );
 }
-ConfirmationQuestions.propTypes = {
+BeerQuestions.propTypes = {
   onTroubleshootingConfirmation: PropTypes.func
 };
 
