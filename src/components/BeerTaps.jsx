@@ -7,7 +7,7 @@ import './BeerTapsCss.css'
 function BeerTaps(props){
   var masterBeerTapList = [
   {
-    breweryName: 'Breakside Brewery',
+    breweryName: 'Breakside',
     beerStyle: 'Wanderlust IPA',
     abv: '6.7'
   },
@@ -22,7 +22,7 @@ function BeerTaps(props){
     abv: '6.66'
   },
   {
-    breweryName: 'Von Eberts',
+    breweryName: 'Von Ebert',
     beerStyle: 'Battle Stations! IPA',
     abv: '7.2'
   }
