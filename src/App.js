@@ -5,7 +5,6 @@ import HomeBody from './components/HomeBody.jsx'
 import { Switch, Route } from 'react-router-dom';
 import BeerTaps from './components/BeerTaps.jsx';
 import NewBeerControl from './components/NewBeerControl.jsx';
-import PropTypes from "prop-types";
 
 
 
@@ -20,9 +19,9 @@ class App extends React.Component {
 }
 
   handleAddingNewBeerToList(newBeer){
-    var newMasterBeerList = this.state.masterBeerList.slice();
-    newMasterBeerList.push(newBeer);
-    this.setState({masterBeerList: newMasterBeerList});
+    var newMasterBeerTapList = this.state.masterBeerTapList.slice();
+    newMasterBeerTapList.push(newBeer);
+    this.setState({masterBeerTapList: newMasterBeerTapList});
 }
 
   render(){
@@ -31,7 +30,7 @@ class App extends React.Component {
     <Header />
     <h1 className ="Bailey"> Bailey's Taphouse</h1>
     <Switch>
-      <Route path='/beertaps' component={BeerTaps} />
+      <Route path='/beertaps' render={()=><BeerTaps beerTaps={this.state.masterBeerTapList} />} />
       <Route path='/homebody' component={HomeBody} />
       <Route path='/newbeer' render={()=><NewBeerControl onNewBeerCreation={this.handleAddingNewBeerToList} />} />
     </Switch>

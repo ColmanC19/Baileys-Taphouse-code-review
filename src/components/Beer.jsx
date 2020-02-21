@@ -8,7 +8,7 @@ function Beer(props){
     <h3>{props.breweryName}|</h3>
     <h4>{props.beerStyle}:{props.abv}%| </h4>
     </div>
-  )
+  );
 }
 Beer.propTypes={
   breweryName: PropTypes.string,
@@ -17,4 +17,4 @@ Beer.propTypes={
 
 };
 
-export default Beer
+export default Beer;
