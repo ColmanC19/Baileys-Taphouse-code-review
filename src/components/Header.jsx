@@ -26,7 +26,7 @@ function Header(){
  return (
 
    <div style={menu}>
-   <Link style={navigation} to="/homebody">🌳 Home 🌳</Link> <Link style={navigation} to="/beertaps">🌳 Beers on Tap 🌳</Link>
+   <Link style={navigation} to="/homebody">🌳 Home </Link> <Link style={navigation} to="/beertaps">🌳 Beers on Tap 🌳</Link><Link style={navigation} to="/newbeer"> Add new beer 🌳</Link>
 
 
    </div>
