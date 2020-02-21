@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import './Beer.css';
 
 function Beer(props){
   return(
-    <div>
-    <h3>{props.breweryName}</h3>
-    <h4>{props.beerStyle}: {props.abv}%</h4>
+    <div className="taps">
+    <h3>{props.breweryName}|</h3>
+    <h4>{props.beerStyle}:{props.abv}%| </h4>
     </div>
   )
 }
