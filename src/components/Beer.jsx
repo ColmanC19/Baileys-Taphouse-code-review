@@ -5,7 +5,9 @@ import './Beer.css';
 function Beer(props){
   return(
     <div className="taps">
-    <h3>{props.breweryName}: {props.beerStyle}({props.abv}%)| </h3>
+    <ul>
+    <li><h3>{props.breweryName}: {props.beerStyle}({props.abv}%)</h3></li>
+    </ul>
     </div>
   );
 }
