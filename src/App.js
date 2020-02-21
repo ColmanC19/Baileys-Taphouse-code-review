@@ -3,7 +3,8 @@ import './App.css';
 import Header from './components/Header.jsx'
 import HomeBody from './components/HomeBody.jsx'
 import { Switch, Route } from 'react-router-dom';
-import BeerTaps from './components/BeerTaps.jsx'
+import BeerTaps from './components/BeerTaps.jsx';
+import PropTypes from "prop-types";
 
 
 
