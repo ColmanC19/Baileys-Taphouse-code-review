@@ -13,5 +13,8 @@ function BeerTaps(){
     </div>
   );
 }
+BeerTaps.propTypes = {
+beerTaps: PropTypes.array
+};
 
 export default BeerTaps
