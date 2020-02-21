@@ -16,6 +16,7 @@ function BeerTaps(props){
       abv={beer.abv}
       key={beer.id}/>
     )}
+    <hr/>
     </div>
       <img src="https://cdn.vox-cdn.com/thumbor/__lr1xhyOvpxWUe04CHu-DSczAI=/0x31:250x219/1400x1400/filters:focal(0x31:250x219):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/38813924/growlerguys250SE.0.jpg" alt="taps"/>
     </div>
