@@ -12,8 +12,8 @@ function Beer(props){
 Beer.propTypes={
   breweryName: PropTypes.string,
   beerStyle: PropTypes.string,
-  abv: PropTypes.string
+  abv: PropTypes.number,
 
-}
+};
 
 export default Beer
