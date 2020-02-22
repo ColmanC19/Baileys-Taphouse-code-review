@@ -1,12 +1,15 @@
-import React from 'react';
+import React from "react";
 import PropTypes from 'prop-types';
 import BeerTaps from './BeerTaps';
 import { v4 } from 'uuid';
+import { Redirect } from 'react-router-dom'
 
 function NewBeerForm(props){
   let _breweryName = null;
   let _beerStyle = null;
   let _abv = null;
+
+
 
   function handleNewBeerFormSubmission(event) {
     event.preventDefault();

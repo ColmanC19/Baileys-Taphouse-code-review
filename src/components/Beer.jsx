@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import './Beer.css';
+import { useHistory } from "react-router-dom";
 
 function Beer(props){
   return(
